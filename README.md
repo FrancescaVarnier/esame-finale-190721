@@ -35,6 +35,26 @@ Una volta osservato queste informazioni l'utente può procedere con l'acquisto d
 9) Aprire il browser all'indirizzo che viene indicato
 
 ## Documentazione API
+//ritorna la lista di tutte le attrazioni
+  getAttrazioni() {
+    return this.http.get<Attrazione[]>("http://localhost:3000/attrazione");
+  }
 
-### Prima chiamata 
+  //ritorna dettaglio attrazione
+  getAttrazioneDetail(id: number) {
+    return this.http.get<Attrazione>("http://localhost:3000/attrazione/" + id);
+  }
+
+  //ritorna la lista degli orari
+  getListaOrari() {
+    return this.http.get<openingTime[]>("http://localhost:3000/openingTime");
+  }
+
+  //ritorna lista dei biglietti
+  getBiglietti() {
+    return this.http.get<Biglietto[]>("http://localhost:3000/biglietti");
+  }
+  
+  
+  singole chiamate alle api
 

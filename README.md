@@ -36,16 +36,19 @@ Una volta osservato queste informazioni l'utente può procedere con l'acquisto d
 
 ## Documentazione API
 //ritorna la lista di tutte le attrazioni
+
   getAttrazioni() {
     return this.http.get<Attrazione[]>("http://localhost:3000/attrazione");
   }
 
   //ritorna dettaglio attrazione
+  
   getAttrazioneDetail(id: number) {
     return this.http.get<Attrazione>("http://localhost:3000/attrazione/" + id);
   }
 
   //ritorna la lista degli orari
+  
   getListaOrari() {
     return this.http.get<openingTime[]>("http://localhost:3000/openingTime");
   }

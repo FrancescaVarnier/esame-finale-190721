@@ -15,8 +15,7 @@
 .img-box {
   box-sizing: content-box;
   margin: 10px;
-  height: 250px;
-  width: 350px;
+  width: 18%;
   overflow: hidden;
   display: inline-block;
   color: white;
@@ -71,7 +70,7 @@
 
 .card {
   padding: 1.2rem 3rem 1rem 3rem;
-  margin: 2rem;
+  margin: 1rem;
   border-radius: 1.5rem;
   border-color: rgba(238, 237, 237, 0.438);
   box-shadow: 5px 8px 10px #80808033;
@@ -208,6 +207,7 @@ dl {
 
 .itemDettagli {
   margin-right: 3em;
+  text-align: center;
 }
 
 dd{
